@@ -147,7 +147,6 @@ app.get('/images/:size/:filename', (req, res) => {
                 
                 if (result.success) {
                     statusDiv.innerHTML = '<div class="status success">Upload successful! Refreshing...</div>';
-                    setTimeout(() => location.reload(), 1000);
                 } else {
                     statusDiv.innerHTML = '<div class="status error">Upload failed</div>';
                 }
